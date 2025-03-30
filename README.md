@@ -16,12 +16,6 @@ A RESTful API for managing automated workflows with steps like API calls and ema
 
 ## Getting Started
 
-### Prerequisites
-
-- [Docker](https://www.docker.com/products/docker-desktop)
-- [Docker Compose](https://docs.docker.com/compose/install/)
-
-### Running with Docker
 
 #### Production Mode
 
@@ -43,12 +37,10 @@ docker-compose -f docker-compose.dev.yml up -d
 
 ### Access the API
 
-Once the containers are running, the API will be available at:
-
 - API: [http://localhost:3000](http://localhost:3000)
 - MongoDB: localhost:27017
 
-### Manual Setup (Without Docker)
+### Manual Setup
 
 If you prefer to run the application without Docker:
 
