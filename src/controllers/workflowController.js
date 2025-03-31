@@ -77,7 +77,7 @@ export const getWorkflows = async (req, res) => {
         
         // Find workflows with pagination
         const workflows = await Workflow.find()
-            // .sort({ 'metadata.updatedAt': -1 }) // Sort by most recently updated
+            .sort({ 'metadata.createdAt': -1 }) // Sort by most recently updated
             .skip(skip)
             .limit(limit);
         
