@@ -16,53 +16,32 @@ A RESTful API for managing automated workflows with steps like API calls and ema
 
 ## Getting Started
 
-
-#### Production Mode
-
 1. Clone the repository
-2. Copy `.env.example` to `.env` and configure your environment variables
-3. Build and start the containers:
+   ```bash
+   git clone <Repo_URL>
+   ```
 
-```bash
-docker-compose up -d
-```
+2. Install dependencies
+   ```bash
+   npm i
+   ```
 
-#### Development Mode
+3. Copy `.env.example` to `.env` and configure your environment variables
 
-For development with hot-reloading:
-
-```bash
-docker-compose -f docker-compose.dev.yml up -d
-```
+4. Start the development server
+   ```bash
+   npm run dev
+   ```
 
 ### Access the API
 
 - API: [http://localhost:3000](http://localhost:3000)
 - MongoDB: localhost:27017
 
-### Manual Setup
+### Prerequisites
 
-If you prefer to run the application without Docker:
-
-1. Install MongoDB
-2. Install Node.js (v14+)
-3. Clone the repository
-4. Install dependencies:
-
-```bash
-npm install
-```
-
-5. Copy `.env.example` to `.env` and configure your environment variables
-6. Start the application:
-
-```bash
-# Development
-npm run dev
-
-# Production
-npm start
-```
+- Node.js (v14+)
+- MongoDB
 
 ## Email Configuration
 
@@ -89,6 +68,4 @@ Note: You need to use an "App Password" rather than your regular password.
 - `DELETE /api/workflows/:id` - Delete a workflow
 - `POST /api/workflows/:id/execute` - Execute a workflow
 
-## License
 
-[MIT](LICENSE) 
