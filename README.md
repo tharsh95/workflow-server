@@ -18,7 +18,7 @@ A RESTful API for managing automated workflows with steps like API calls and ema
 
 1. Clone the repository
    ```bash
-   git clone <Repo_URL>
+   git clone git@github.com:tharsh95/workflow-server.git
    ```
 
 2. Install dependencies
